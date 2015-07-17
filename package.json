@@ -1,0 +1,30 @@
+{
+  "name": "arrival-process",
+  "version": "1.0.0",
+  "description": "Modeling arrival processes of events in a system.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/index.js",
+    "is_formatted": "find . -name '*.js' | grep -v node_modules | grep -v coverage | xargs jscs --preset=google",
+    "is_linted": "find . -name '*.js' | grep -v node_modules | grep -v coverage | xargs eslint",
+    "coverage": "istanbul cover test/index.js && istanbul check-coverage"
+  },
+  "keywords": [
+    "poisson",
+    "process",
+    "arrival"
+  ],
+  "author": "Hassy Veldstra <h@artillery.io>",
+  "license": "ISC",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "istanbul": "^0.3.17",
+    "pre-commit": "^1.0.10",
+    "tape": "^4.0.0"
+  },
+  "pre-commit": [
+    "is_linted",
+    "is_formatted"
+  ]
+}
