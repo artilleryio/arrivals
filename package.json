@@ -1,5 +1,5 @@
 {
-  "name": "arrival-process",
+  "name": "arrivals",
   "version": "1.0.0",
   "description": "Modeling arrival processes of events in a system.",
   "main": "index.js",

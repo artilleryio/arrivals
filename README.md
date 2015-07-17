@@ -23,12 +23,11 @@ var arrivals = require('arrival-process');
 
 // Create a Poisson process with the mean inter-arrival time of 500 ms that
 // will run for 20 seconds:
-var p = arrivals.poisson.process(500, callback, 20 * 1000);
+var p = arrivals.poisson.process(500, 20 * 1000);
 
-// Arrival callback:
-function callback() {
+p.on('arrival', function onArrival() {
   console.log('New arrival, %s', new Date());
-}
+});
 
 p.once('finished', function() {
   console.log('We are done.');
@@ -48,9 +47,9 @@ var arrivals = require('arrival-process');
 
 // Create an arrivals process that will trigger the callback every 500ms for
 // 20 seconds (for a total of 20000 / 200 = 40 arrivals)
-var p = arrivals.uniform.process(500, callback, 20 * 1000);
+var p = arrivals.uniform.process(500, 20 * 1000);
 
-function callback() {
+p.on('arrival', function onArrival() {
   console.log('New arrival, %s', new Date());
 }
 
