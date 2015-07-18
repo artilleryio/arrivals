@@ -1,4 +1,4 @@
-# arrival-process
+# arrivals
 
 **Purpose**: Use this library to model the arrival of events in a system.
 
@@ -10,7 +10,7 @@ Minigun is a modern load-testing tool with a focus on usability.
 
 ## Usage
 
-`npm install --save arrival-process`
+`npm install arrivals`
 
 Two models of arrival processes are available: [Poisson](http://en.wikipedia.org/wiki/Poisson_process) and Uniform.
 
@@ -19,7 +19,7 @@ Two models of arrival processes are available: [Poisson](http://en.wikipedia.org
 //
 // Poisson process example
 //
-var arrivals = require('arrival-process');
+var arrivals = require('arrivals');
 
 // Create a Poisson process with the mean inter-arrival time of 500 ms that
 // will run for 20 seconds:
@@ -43,7 +43,7 @@ will run until stopped with `p.stop()`.
 //
 // Uniform arrivals example:
 //
-var arrivals = require('arrival-process');
+var arrivals = require('arrivals');
 
 // Create an arrivals process that will trigger the callback every 500ms for
 // 20 seconds (for a total of 20000 / 200 = 40 arrivals)
