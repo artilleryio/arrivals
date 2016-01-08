@@ -55,12 +55,12 @@ tape('Can create a uniform process', function(t) {
     p.stop();
     t.assert(count === 6, 'Correct number of arrivals');
     t.end();
-  }, 2800);
+  }, 2700);
 });
 
 tape('Can create a uniform process with fixed duration', function(t) {
   var count = 0;
-  var p = arrivals.uniform.process(400, 2800);
+  var p = arrivals.uniform.process(400, 2700);
   p.on('arrival', function() {
     t.ok(true, '  got arrival event ' + (++count));
   });
