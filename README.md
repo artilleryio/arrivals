@@ -62,11 +62,6 @@ p.start();
 
 The last argument (total duration) is optional as in the previous example.
 
-**NOTE:** When using uniform process, setting the inter-arrival time to N ms
-and duration to D ms will yield D/N arrivals as intuitively expected. However,
-stopping the process with `p.stop()` via `setTimeout` with the same N and D
-values will result in D/N-1 arrivals.
-
 ## License
 
 This software is distributed under the terms of the [ISC](http://en.wikipedia.org/wiki/ISC_license) license.
