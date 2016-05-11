@@ -21,7 +21,7 @@
   "author": "Hassy Veldstra <h@artillery.io>",
   "license": "ISC",
   "dependencies": {
-    "rolex": "0.0.1"
+    "nanotimer": "0.3.14"
   },
   "devDependencies": {
     "istanbul": "^0.3.17",
