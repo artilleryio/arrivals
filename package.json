@@ -24,7 +24,9 @@
     "nanotimer": "0.3.14"
   },
   "devDependencies": {
+    "eslint": "^2.9.0",
     "istanbul": "^0.3.17",
+    "jscs": "^3.0.3",
     "pre-commit": "^1.0.10",
     "tape": "^4.0.0"
   },
