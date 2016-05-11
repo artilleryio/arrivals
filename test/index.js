@@ -74,3 +74,18 @@ tape('Can create a uniform process with fixed duration', function(t) {
   p.start();
   t.ok(true, 'Process started');
 });
+
+tape('Expect number of arrival events get emitted', function(t) {
+  var arrivalCount = 30;
+  var duration = 1000;
+  var count = 0;
+  var p = arrivals.uniform.process(duration / arrivalCount, duration);
+  p.on('arrival', function() {
+    count++;
+  });
+  p.once('finished', function () {
+    t.assert(count === arrivalCount, 'Got the expect number of arrivals');
+    t.end();
+  });
+  p.start();
+});
