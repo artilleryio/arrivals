@@ -21,6 +21,7 @@
   "author": "Hassy Veldstra <h@artillery.io>",
   "license": "ISC",
   "dependencies": {
+    "debug": "2.3.3",
     "nanotimer": "0.3.14"
   },
   "devDependencies": {

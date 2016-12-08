@@ -53,7 +53,7 @@ tape('Can create a uniform process', function(t) {
   t.ok(true, 'Process started');
   setTimeout(function() {
     p.stop();
-    t.assert(count === 6, 'Correct number of arrivals');
+    t.assert(count === 6, `Correct number of arrivals - got ${count} - 1`);
     t.end();
   }, 2700);
 });
@@ -66,7 +66,7 @@ tape('Can create a uniform process with fixed duration', function(t) {
   });
   p.once('finished', function() {
     t.ok(true, '  got finished event');
-    t.assert(count === 7, 'Correct number of arrivals');
+    t.assert(count === 6, `Correct number of arrivals - got ${count} - 2`);
     t.end();
   });
 
@@ -84,7 +84,8 @@ tape('Expect number of arrival events get emitted', function(t) {
     count++;
   });
   p.once('finished', function () {
-    t.assert(count === arrivalCount, 'Got the expect number of arrivals');
+    console.log(`count = ${count}, arrivalCount = ${arrivalCount}`);
+    t.assert(count === arrivalCount, 'Got expected number of arrivals');
     t.end();
   });
   p.start();
