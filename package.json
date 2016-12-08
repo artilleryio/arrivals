@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "test": "node test/index.js",
-    "is_formatted": "find . -name '*.js' | grep -v node_modules | grep -v coverage | xargs jscs --preset=google",
     "is_linted": "find . -name '*.js' | grep -v node_modules | grep -v coverage | xargs eslint",
     "coverage": "istanbul cover test/index.js && istanbul check-coverage"
   },
@@ -27,12 +26,10 @@
   "devDependencies": {
     "eslint": "^2.9.0",
     "istanbul": "^0.3.17",
-    "jscs": "^3.0.3",
     "pre-commit": "^1.0.10",
     "tape": "^4.0.0"
   },
   "pre-commit": [
-    "is_linted",
-    "is_formatted"
+    "is_linted"
   ]
 }
