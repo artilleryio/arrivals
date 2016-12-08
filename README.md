@@ -1,18 +1,18 @@
 # arrivals
 
-**Purpose**: Use this library to model the arrival of events in a system.
+`arrivals` models arrival events in a system, e.g.:
 
-**For example**: Model the arrival of visitors to a website; incoming phone calls to
-an exchange; spawning of ghosts in your Pacman clone.
+- visitors arriving to use a website
+- incoming phone calls to an exchange
+- ghosts spawning in Pacman
 
-This library was originally developed for use in [Minigun](https://artillery.io/minigun).
-Minigun is a modern load-testing tool with a focus on usability.
+This library was originally developed for use in [Artillery](https://artillery.io/), a modern load testing toolkit.
 
 ## Usage
 
 `npm install arrivals`
 
-Two models of arrival processes are available: [Poisson](http://en.wikipedia.org/wiki/Poisson_process) and Uniform.
+Two models of arrival processes are available: [Poisson](http://en.wikipedia.org/wiki/Poisson_process) and Uniform (arrivals at a specified constant rate).
 
 
 ```javascript
@@ -67,7 +67,7 @@ The last argument (total duration) is optional as in the previous example.
 This software is distributed under the terms of the [ISC](http://en.wikipedia.org/wiki/ISC_license) license.
 
 ```
-Copyright (c) 2015, Hassy Veldstra <h@veldstra.org>
+Copyright (c) 2015-2016, Hassy Veldstra <h@artillery.io>
 
 Permission to use, copy, modify, and/or distribute this software for any
 purpose with or without fee is hereby granted, provided that the above
