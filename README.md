@@ -67,7 +67,7 @@ The last argument (total duration) is optional as in the previous example.
 This software is distributed under the terms of the [ISC](http://en.wikipedia.org/wiki/ISC_license) license.
 
 ```
-Copyright (c) 2015-2016, Hassy Veldstra <h@artillery.io>
+Copyright (c) 2015-2017, Hassy Veldstra <h@artillery.io>
 
 Permission to use, copy, modify, and/or distribute this software for any
 purpose with or without fee is hereby granted, provided that the above
