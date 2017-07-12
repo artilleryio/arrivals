@@ -1,6 +1,6 @@
 {
   "name": "arrivals",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Modeling arrival processes of events in a system.",
   "main": "index.js",
   "scripts": {
